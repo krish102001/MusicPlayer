@@ -1,0 +1,10 @@
+.jfx-combo-box {
+	-fx-background-color:  red;
+	-fx-text-fill : white;
+	-fx-opacity: 0.8;
+}
+.jfx-combo-box .label {
+	-fx-background-color:  black;
+	-fx-opacity: 0.8;
+	-fx-text-fill: red;
+}

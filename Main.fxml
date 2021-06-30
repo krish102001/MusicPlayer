@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-opacity: 0.8;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="previous" layoutX="170.0" layoutY="346.0" mnemonicParsing="false" onAction="#previous" style="-fx-background-color: red; -fx-opacity: 0.8;" text="⏮" textFill="#ffffffe5">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="play" layoutX="224.0" layoutY="346.0" mnemonicParsing="false" onAction="#playOrPause" prefHeight="40.0" prefWidth="39.0" style="-fx-background-color: red; -fx-opacity: 0.8;" text="⏯" textFill="#ffffffe5">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="next" layoutX="280.0" layoutY="346.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: red; -fx-opacity: 0.8;" text="⏭" textFill="#ffffffe5">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="reset" layoutX="345.0" layoutY="347.0" mnemonicParsing="false" onAction="#reset" prefHeight="40.0" prefWidth="46.0" style="-fx-background-color: red; -fx-opacity: 0.8;" text="🔄" textFill="#ffffffe5">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Slider fx:id="volume" blockIncrement="1.0" layoutX="410.0" layoutY="346.0" max="200.0" opacity="0.8" prefHeight="40.0" prefWidth="159.0" style="-fx-background-color: red; -fx-background-radius: 5px;" value="50.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </Slider>
+      <ProgressBar fx:id="progressBar" layoutY="321.0" opacity="0.8" prefHeight="18.0" prefWidth="600.0" progress="0.0" />
+      <ComboBox fx:id="comboBox" blendMode="ADD" layoutX="40.0" layoutY="346.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#changeSpeed" prefHeight="40.0" prefWidth="110.0" promptText="Speed" stylesheets="@comboBox.css">
+         <styleClass>
+            <String fx:value="jfx-combo-box" />
+            <String fx:value="label" />
+         </styleClass></ComboBox>
+      <Label fx:id="label" alignment="CENTER" layoutY="-2.0" prefHeight="322.0" prefWidth="600.0" text="Mp3 Player" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
